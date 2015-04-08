@@ -1283,9 +1283,9 @@ Also affects 'linum-mode' background."
    ;; company-mode
    `(company-tooltip
      ((,monokai-class (:background ,monokai-highlight-line
-                                   :foreground ,monokai-emphasis))
+                                   :foreground ,monokai-cyan))
       (,monokai-256-class  (:background ,monokai-256-highlight-line
-                                        :foreground ,monokai-256-emphasis))))
+                                        :foreground ,monokai-256-cyan))))
 
    `(company-tooltip-selection
      ((,monokai-class (:background ,monokai-blue
@@ -1335,9 +1335,9 @@ Also affects 'linum-mode' background."
 
    `(company-tooltip-annotation
      ((,monokai-class (:background ,monokai-highlight-line
-                                   :foreground ,monokai-green))
+                                   :foreground ,monokai-yellow))
       (,monokai-256-class  (:background ,monokai-256-highlight-line
-                                        :foreground ,monokai-256-green))))
+                                        :foreground ,monokai-256-yellow))))
 
    `(company-template-field
      ((,monokai-class (:background ,monokai-highlight-line
@@ -3390,9 +3390,13 @@ Also affects 'linum-mode' background."
       (,monokai-256-class  (:foreground ,monokai-256-red))))
 
    ;; markdown-mode
+   `(markdown-header-delimiter-face
+     ((,monokai-class (:foreground ,monokai-blue))
+      (,monokai-256-class (:foreground ,monokai-256-blue))))
+
    `(markdown-header-face
-     ((,monokai-class (:foreground ,monokai-green))
-      (,monokai-256-class  (:foreground ,monokai-256-green))))
+     ((,monokai-class (:foreground ,monokai-blue))
+      (,monokai-256-class  (:foreground ,monokai-256-blue))))
 
    `(markdown-header-face-1
      ((,monokai-class (:inherit markdown-header-face
@@ -4189,13 +4193,13 @@ Also affects 'linum-mode' background."
                                         :background ,monokai-256-gray-d
                                         :slant italic))))
 
-   `(org-checkbox
-     ((,monokai-class (:background ,monokai-background
-                                   :foreground ,monokai-foreground
-                                   :box (:line-width 1 :style released-button)))
-      (,monokai-256-class  (:background ,monokai-256-background
-                                        :foreground ,monokai-256-foreground
-                                        :box (:line-width 1 :style released-button)))))
+   ;; `(org-checkbox
+;;      ((,monokai-class (:background ,monokai-background
+;;                                    :foreground ,monokai-foreground
+;;                                    :box (:line-width 1 :style released-button)))
+;;       (,monokai-256-class  (:background ,monokai-256-background
+;;                                         :foreground ,monokai-256-foreground
+;;                                         :box (:line-width 1 :style released-button)))))
 
    `(org-code
      ((,monokai-class (:foreground ,monokai-comments))
@@ -4232,26 +4236,26 @@ Also affects 'linum-mode' background."
    `(org-level-1
      ((,monokai-class (:inherit ,monokai-pitch
                                 :height ,monokai-height-plus-4
-                                :foreground ,monokai-orange))
+                                :foreground ,monokai-blue))
       (,monokai-256-class  (:inherit ,monokai-pitch
                                      :height ,monokai-height-plus-4
-                                     :foreground ,monokai-256-orange))))
+                                     :foreground ,monokai-256-blue))))
 
    `(org-level-2
      ((,monokai-class (:inherit ,monokai-pitch
                                 :height ,monokai-height-plus-3
-                                :foreground ,monokai-green))
+                                :foreground ,monokai-cyan))
       (,monokai-256-class  (:inherit ,monokai-pitch
                                      :height ,monokai-height-plus-3
-                                     :foreground ,monokai-256-green))))
+                                     :foreground ,monokai-256-cyan))))
 
    `(org-level-3
      ((,monokai-class (:inherit ,monokai-pitch
                                 :height ,monokai-height-plus-2
-                                :foreground ,monokai-blue))
+                                :foreground ,monokai-orange))
       (,monokai-256-class  (:inherit ,monokai-pitch
                                      :height ,monokai-height-plus-2
-                                     :foreground ,monokai-256-blue))))
+                                     :foreground ,monokai-256-orange))))
 
    `(org-level-4
      ((,monokai-class (:inherit ,monokai-pitch
